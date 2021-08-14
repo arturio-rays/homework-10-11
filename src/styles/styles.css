@@ -62,7 +62,6 @@ h3 {
     background-color: #b07cf7
 }
 
-
 .post {
     display: flex;
     flex-direction: column;
@@ -168,6 +167,8 @@ h3 {
 }
 
 .contact-holder {
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 100px;
 }
 
@@ -198,14 +199,21 @@ h3 {
     padding: 25px;
 }
 
-.contact-form {
+.form-holder {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input-holder {
+    
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 500px;
 }
 
-.contact-form ::placeholder {
+.holder ::placeholder {
     color: #fff;
     font-size: 15px;
     font-family: 'Raleway', sans-serif;
@@ -213,21 +221,29 @@ h3 {
     line-height: 25px;
 }
 
-.form-item {
-    max-width: 500px;
+.input-item {
     background-color: rgba(0,196,196,.5);
     border: none;
     padding: 20px;
     margin-bottom: 15px;
 }
 
-.form-item:focus {
+.input-item:focus {
     color: #fff;
     background-color: rgba(0,196,196,1);
     border-left: 5px solid #355b82;
 }
 
 .contact-examp {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: 'Raleway', sans-serif;  
+}
+
+.contact-examp a {
+    text-decoration: none;
+    color: #000;
     font-family: 'Raleway', sans-serif;
 }
 
